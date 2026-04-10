@@ -1,86 +1,90 @@
-# GDM Theme
+Optimizing tool selection...开始检查当前 README.md 内容。
 
-A customized GDM (GNOME Display Manager) login theme based on Ubuntu's Yaru theme.
+Read [](file:///home/whywood/project/gdmtheme/README.md)
 
-![preview](lain.jpg)
+# GDM 主题
 
-## Installation
+可爱的lain的登录主题。
 
-### Method 1: Direct Replace (Pre-compiled)
+!preview
 
-1. Download `gnome-shell-theme.gresource` from this project
+## 安装
 
-2. Locate the theme directory currently in use (Ubuntu 25.10 Yaru theme example):
+### 方法一：直接替换（预编译）
+
+1. 从本项目下载 gnome-shell-theme.gresource
+
+2. 找到当前使用的主题目录（以 Ubuntu 25.10 Yaru 主题为例）：
 
    ```bash
    sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/theme/Yaru/
    ```
 
-3. Reboot to apply changes
+3. 重启以应用更改
 
-> **⚠️ Warning**: This will overwrite the original system theme. It's recommended to backup the original file or test in a safe environment.
+> **⚠️ 警告**：这会覆盖原系统主题。建议先备份原文件，或在安全环境中测试。
 >
 > ```bash
-> # Backup original file (requires root)
+> # 备份原文件（需 root）
 > sudo cp /usr/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource /usr/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource.backup
 > ```
 
-### Method 2: Clone and Replace
+### 方法二：克隆并替换
 
 ```bash
-# Clone the project
+# 克隆项目
 git clone https://github.com/your-repo/gdmtheme.git
 cd gdmtheme
 
-# Replace system theme file
+# 替换系统主题文件
 sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/theme/Yaru/
 ```
 
-## Development
+## 开发
 
-If you want to customize the background image, colors, or other styles, you can modify the CSS and recompile the theme.
+如果你想定制背景图片、颜色或其他样式，可以修改 CSS 并重新编译主题。
 
-### Step 1: Modify Styles
+### 第一步：修改样式
 
-Edit `gdm.css` to customize:
+编辑 gdm.css，可定制：
 
-- Background image: `background-image: url('lain.jpg');`
-- Colors: `color: #ffffff;`
-- Border radius: `border-radius: 16px;`
+- 背景图片：`background-image: url('lain.jpg');`
+- 颜色：`color: #ffffff;`
+- 边框圆角：`border-radius: 16px;`
 
-> You can send your modification requirements to an AI assistant to help with CSS changes.
+> 你可以将修改需求发送给 AI 助手，来帮助调整 CSS。
 
-### Step 2: Compile Theme
+### 第二步：编译主题
 
-After modifying the CSS, compile all resource files into a `.gresource` file:
+修改 CSS 后，将所有资源文件编译成 `.gresource` 文件：
 
 ```bash
-# Go to project directory
+# 进入项目目录
 cd gdmtheme
 
-# Compile theme using gresource
+# 使用 gresource 编译主题
 glib-compile-resources --target=gnome-shell-theme.gresource --sourcedir=. gnome-shell-theme.gresource.xml
 ```
 
-### Step 3: Replace File
+### 第三步：替换文件
 
-Once compiled, replace the system theme file following the steps in the "Installation" section.
+编译完成后，按“安装”部分的步骤替换系统主题文件。
 
-### Backup and Restore
+### 备份与恢复
 
-To restore the original theme:
+要恢复原主题：
 
 ```bash
 sudo cp /usr/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource.backup /usr/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource
 ```
 
-## File Description
+## 文件说明
 
-| File | Description |
-|------|------------|
-| `gnome-shell-theme.gresource` | Compiled theme resource file |
-| `gnome-shell-theme.gresource.xml` | Resource manifest (used for compilation) |
-| `gdm.css` | GDM login interface styles |
-| `gnome-shell-dark.css` | Dark theme styles |
-| `gnome-shell-light.css` | Light theme styles |
-| `lain.jpg` | Background image |
+| 文件 | 说明 |
+|------|------|
+| gnome-shell-theme.gresource | 已编译的主题资源文件 |
+| gnome-shell-theme.gresource.xml | 资源清单（用于编译） |
+| gdm.css | GDM 登录界面样式 |
+| gnome-shell-dark.css | 暗色主题样式 |
+| gnome-shell-light.css | 亮色主题样式 |
+| lain.jpg | 背景图片 |
