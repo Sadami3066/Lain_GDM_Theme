@@ -2,7 +2,8 @@
 
 A lain theme.
 
-![preview](lain.jpg)
+![preview](show1.jpg)
+![preview](show2.jpg)
 
 ## Installation
 

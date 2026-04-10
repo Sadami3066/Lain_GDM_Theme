@@ -3,7 +3,8 @@
 
 可爱的lain的登录主题。
 
-![preview](lain.jpg)
+![preview](show1.jpg)
+![preview](show2.jpg)
 
 ## 安装
 
