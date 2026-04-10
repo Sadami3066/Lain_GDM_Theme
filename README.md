@@ -1,12 +1,9 @@
-Optimizing tool selection...开始检查当前 README.md 内容。
-
-Read [](file:///home/whywood/project/gdmtheme/README.md)
 
 # GDM 主题
 
 可爱的lain的登录主题。
 
-!preview
+![preview](lain.jpg)
 
 ## 安装
 

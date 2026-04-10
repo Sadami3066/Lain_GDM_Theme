@@ -1,6 +1,6 @@
 # GDM Theme
 
-A customized GDM (GNOME Display Manager) login theme based on Ubuntu's Yaru theme.
+A lain theme.
 
 ![preview](lain.jpg)
 
